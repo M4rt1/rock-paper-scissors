@@ -1,0 +1,95 @@
+/* No CSS *//*# sourceMappingURL=Board.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+
+$player-font: 'Pattaya', sans-serif;
+$score-font: 'Farro', sans-serif;
+$text-font: 'Big Shoulders Display', cursive;
+$button-font: 'Chela One', cursive;
+
+
+h1,h2,h4{
+    text-align: center;
+    transition: 1s ease-out;
+}
+h1{
+    font-family: $player-font;
+}
+h2{
+    font-family: $score-font;
+}
+h4{
+    font-family: $text-font;
+}
+#col{
+    margin-top:20px;
+    text-align: center;
+}
+#container{
+    width:40%;
+    background-color: hsl(103, 53%, 64%);
+    border-bottom:5px double black;
+    border-top:5px double black;
+    border-radius:20px;
+}
+#rps-button{
+    font-size: 2rem;
+    line-height: 10px;
+    font-family: $button-font;
+}
+#reset-button{
+    width:70%;
+    font-size: 2rem;
+    line-height: 10px;
+    font-family: $button-font;
+}
+.row{
+    align-items: center;
+}
+.header{
+    border-bottom:2px double hsl(103, 53%, 34%);
+}
+.header-2{
+    border-bottom:2px double hsl(103, 53%, 34%);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+@media(max-width:1130px){
+    #container{
+        width:70%;
+    }
+}
+@media(max-width:640px) {
+    #container{
+        width:100%;
+    }
+    #col{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .header{
+        font-size: 1.5rem;
+        width:100%;
+    }
+    .header-2{
+        font-size: 2.2rem;
+    }
+    .val{
+        font-size: 3rem;
+    }
+    #rps-button{
+        padding:0;
+        width:90%;
+    }
+    #reset-button{
+        padding: 0;
+        width:90%;
+    }
+}
+.btn{
+    margin:5px 10px;
+    height:50px;
+    width:120px;
+}
